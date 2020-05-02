@@ -27,6 +27,7 @@ public class Consumer {
                     for (ConsumerRecord<String, String> record : records)
                         System.out.println(record.value());
                 }
+                    
             } finally {
                 consumer.close();
             }
